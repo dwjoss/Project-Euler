@@ -17,10 +17,11 @@ def generateFib(limit):
     
     return res
 
-total = 0
-for num in  generateFib(4000000):
-    if num % 2 == 0:
-        total += num
+if __name__ == '__main__':
+    total = 0
+    for num in  generateFib(4000000):
+        if num % 2 == 0:
+            total += num
 
-print total
+    print total
 
