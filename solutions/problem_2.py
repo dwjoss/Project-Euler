@@ -19,7 +19,9 @@ def generateFib(limit):
 
 if __name__ == '__main__':
     total = 0
-    for num in  generateFib(4000000):
+    pos = generateFib(4000000)
+
+    for num in pos:
         if num % 2 == 0:
             total += num
 
