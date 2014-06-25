@@ -15,4 +15,6 @@ def brute_force_find_largest_palindrome():
     return largest
 
 if __name__ == "__main__":
+
     print brute_force_find_largest_palindrome()
+
