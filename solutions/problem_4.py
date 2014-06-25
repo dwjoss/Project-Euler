@@ -1,15 +1,18 @@
 # Problem 4
 #
-# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 =
+# 91 x 99.
 #
 # Find the largest palindrome made from the product of two 3-digit numbers.
 #
 
-def find_largest_palindrome():
+def brute_force_find_largest_palindrome():
+    largest = 0
     for i in range(100, 1000)[::-1]:
-        for j in range(100, 1000)[::-1]
-            if str(i*j) == str(i*j0[::-1]:
-                return i*j
+        for j in range(100, 1000)[::-1]:
+            if i*j > largest and  str(i*j) == str(i*j)[::-1]:
+                largest = i*j
+    return largest
 
 if __name__ == "__main__":
-    print find_largest_palindrome()
+    print brute_force_find_largest_palindrome()
