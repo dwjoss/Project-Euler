@@ -30,13 +30,12 @@ def sieve(limit):
 
 def largest_prime_factor(number):
     current = 2
-    while number != current:
+    while current < number:
         if number % current == 0:
             number /= current
-            current = 2
         else:
             current += 1
-    return current
+    return number
 
 if __name__ == '__main__':
     print largest_prime_factor(600851475143)
