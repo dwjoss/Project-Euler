@@ -40,5 +40,4 @@ def greatest_product(N):
     return largest 
 
 if __name__ == "__main__":
-
-    print greatest_product(5)
+    print greatest_product(13)

@@ -10,11 +10,11 @@ def brute_force_find_largest_palindrome():
     largest = 0
     for i in range(100, 1000)[::-1]:
         for j in range(100, 1000)[::-1]:
-            if i*j > largest and  str(i*j) == str(i*j)[::-1]:
+            number_string = str(i*j)
+            if i*j > largest and  number_string == number_string[::-1]:
                 largest = i*j
     return largest
 
 if __name__ == "__main__":
-
     print brute_force_find_largest_palindrome()
 
