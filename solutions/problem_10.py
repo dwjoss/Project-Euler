@@ -30,5 +30,4 @@ def prime_sum(n):
     return sum(sieve(n))
 
 if __name__ == '__main__':
-    print sieve(2000000)
     print prime_sum(2000000)
