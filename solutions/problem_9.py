@@ -14,4 +14,6 @@ def brute_force_pythagoras():
                     if a + b + c == 1000:
                         return a*b*c
 
-print brute_force_pythagoras()
+if __name__ == '__main__':
+
+    print brute_force_pythagoras()
