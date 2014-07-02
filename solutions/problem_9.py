@@ -6,13 +6,15 @@
 # There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 # Find the product abc.
 
+from math import sqrt
+
 def brute_force_pythagoras():
     for a in range(500):
         for b in range(500):
-            for c in range(500):
-                if a**2 + b**2 == c**2:
-                    if a + b + c == 1000:
-                        return a*b*c
+            c = int(sqrt(a**2 + b**2))
+            if a**2 + b**2 == c**2:
+                if a + b + c == 1000:
+                    return a*b*c
 
 if __name__ == '__main__':
 
